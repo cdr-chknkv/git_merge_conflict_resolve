@@ -1,3 +1,5 @@
+# [small pizza][chicken][cheese][pepper]
+
 class AbstractPizza:
     def description(self) ->str:
         pass
@@ -59,8 +61,7 @@ def print_pizza_to_ui(pizza: AbstractPizza) ->None:
 
 if __name__ == '__main__':
     pizza = SmallPizza()
+    pizza = Chicken(pizza)
     pizza = Cheese(pizza)
-    pizza = Cheese(pizza)
-    pizza = Cheese(pizza)
-    pizza = Cheese(pizza)
+    pizza = Pepper(pizza)
     print_pizza_to_ui(pizza)
